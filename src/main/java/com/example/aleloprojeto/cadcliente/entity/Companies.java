@@ -4,14 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
+import lombok.*;
 
 
 @Entity
+@Getter
+@Setter
 @Data
 @Builder
 @NoArgsConstructor
@@ -26,7 +24,7 @@ public class Companies {
     private String companyName;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
-    @JoinColumn(name = "author_id")
+    @JoinColumn(name = "owner_id")
     private people owner;
 
 
@@ -46,6 +44,7 @@ public class Companies {
     @Column(nullable = false)
     private Adress adress;
 
-    @Column(nullable = true)
-    private String monthPay;
+
+
+
 }

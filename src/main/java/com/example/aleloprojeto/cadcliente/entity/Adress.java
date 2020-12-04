@@ -15,6 +15,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+
+//classe de endereços de empresas
 public class Adress {
 
     @Column(nullable = false)
@@ -34,4 +36,6 @@ public class Adress {
 
     @Column(nullable = false)
     private String Complement;
+
+
 }

@@ -27,7 +27,7 @@ public class people {
     @Column(nullable = false)
     private String cpf;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private  Adress adress;
 
     @Column(nullable = false)
