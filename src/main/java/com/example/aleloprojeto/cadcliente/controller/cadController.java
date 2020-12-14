@@ -6,6 +6,9 @@ import com.example.aleloprojeto.cadcliente.dto.MessageResponseDTO;
 import com.example.aleloprojeto.cadcliente.entity.Companies;
 import com.example.aleloprojeto.cadcliente.repository.CadRepository;
 import com.example.aleloprojeto.cadcliente.service.CadService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -30,6 +33,10 @@ public class cadController {
     @Autowired
 
 
+    @ApiOperation(value= "Return an example hello world")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Success method return")
+    })
     @PostMapping
     public MessageResponseDTO create(@RequestBody @Valid CompaniesDTO companyDTO){
         return cadService.create(companyDTO);
