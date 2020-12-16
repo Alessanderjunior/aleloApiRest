@@ -1,11 +1,9 @@
-package com.example.aleloprojeto.cadcliente.controller;
+package com.example.aleloprojeto.companystorage.controller;
 
 
-import com.example.aleloprojeto.cadcliente.dto.CompaniesDTO;
-import com.example.aleloprojeto.cadcliente.dto.MessageResponseDTO;
-import com.example.aleloprojeto.cadcliente.entity.Companies;
-import com.example.aleloprojeto.cadcliente.repository.CadRepository;
-import com.example.aleloprojeto.cadcliente.service.CadService;
+import com.example.aleloprojeto.companystorage.dto.CompaniesDTO;
+import com.example.aleloprojeto.companystorage.dto.MessageResponseDTO;
+import com.example.aleloprojeto.companystorage.service.CadService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -20,7 +18,7 @@ import javax.validation.Valid;
 @RestController
 @RequestMapping("/api/v1/companies")
 
-//classe responsável pelas requisições http
+
 
 public class cadController {
 
@@ -37,6 +35,7 @@ public class cadController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success method return")
     })
+
     @PostMapping
     public MessageResponseDTO create(@RequestBody @Valid CompaniesDTO companyDTO){
         return cadService.create(companyDTO);

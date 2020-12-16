@@ -1,6 +1,6 @@
-package com.example.aleloprojeto.cadcliente.dto;
+package com.example.aleloprojeto.companystorage.dto;
 
-import com.example.aleloprojeto.cadcliente.entity.Adress;
+import com.example.aleloprojeto.companystorage.entity.Adress;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Data

@@ -1,4 +1,4 @@
-package com.example.aleloprojeto.cadcliente.entity;
+package com.example.aleloprojeto.companystorage.entity;
 import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

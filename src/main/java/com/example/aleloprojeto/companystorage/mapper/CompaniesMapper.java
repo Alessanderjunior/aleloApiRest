@@ -1,8 +1,8 @@
-package com.example.aleloprojeto.cadcliente.mapper;
+package com.example.aleloprojeto.companystorage.mapper;
 
 
-import com.example.aleloprojeto.cadcliente.dto.CompaniesDTO;
-import com.example.aleloprojeto.cadcliente.entity.Companies;
+import com.example.aleloprojeto.companystorage.dto.CompaniesDTO;
+import com.example.aleloprojeto.companystorage.entity.Companies;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

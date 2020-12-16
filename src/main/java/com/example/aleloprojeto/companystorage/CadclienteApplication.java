@@ -1,4 +1,4 @@
-package com.example.aleloprojeto.cadcliente;
+package com.example.aleloprojeto.companystorage;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

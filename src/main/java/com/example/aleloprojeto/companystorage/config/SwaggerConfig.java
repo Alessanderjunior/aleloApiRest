@@ -1,4 +1,4 @@
-package com.example.aleloprojeto.cadcliente.config;
+package com.example.aleloprojeto.companystorage.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 
 
-    private static final String BASE_PACKAGE = "com.example.aleloprojeto.cadcliente";
+    private static final String BASE_PACKAGE = "com.example.aleloprojeto.companystorage";
     private static final String API_TITLE = "Consulting Companies";
     private static final String API_DESCRIPTION = "Consulting Companies API Rest";
     private static final String API_VERSION = "1.0.0";

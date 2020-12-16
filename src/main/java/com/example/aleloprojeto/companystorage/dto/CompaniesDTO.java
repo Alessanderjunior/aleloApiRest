@@ -1,9 +1,8 @@
-package com.example.aleloprojeto.cadcliente.dto;
+package com.example.aleloprojeto.companystorage.dto;
 
-import com.example.aleloprojeto.cadcliente.entity.Adress;
-import com.example.aleloprojeto.cadcliente.entity.people;
+import com.example.aleloprojeto.companystorage.entity.Adress;
+import com.example.aleloprojeto.companystorage.entity.people;
 
-import javax.persistence.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

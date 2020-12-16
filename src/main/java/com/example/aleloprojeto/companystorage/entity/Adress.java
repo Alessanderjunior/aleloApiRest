@@ -1,7 +1,6 @@
-package com.example.aleloprojeto.cadcliente.entity;
+package com.example.aleloprojeto.companystorage.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,8 +15,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-//classe de endereços de empresas
+
 public class Adress {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer adresId;
 
     @Column(nullable = false)
     private String street;

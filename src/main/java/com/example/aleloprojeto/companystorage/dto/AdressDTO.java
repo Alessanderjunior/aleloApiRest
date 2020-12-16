@@ -1,4 +1,4 @@
-package com.example.aleloprojeto.cadcliente.dto;
+package com.example.aleloprojeto.companystorage.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.example.aleloprojeto.cadcliente.entity;
+package com.example.aleloprojeto.companystorage.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
