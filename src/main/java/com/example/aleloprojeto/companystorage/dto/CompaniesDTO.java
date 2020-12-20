@@ -1,7 +1,7 @@
 package com.example.aleloprojeto.companystorage.dto;
 
 import com.example.aleloprojeto.companystorage.entity.Adress;
-import com.example.aleloprojeto.companystorage.entity.people;
+import com.example.aleloprojeto.companystorage.entity.People;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
@@ -17,7 +17,7 @@ public class CompaniesDTO {
 
     @NotBlank
     @Valid
-    private people owner;
+    private People owner;
 
 
     @NotBlank
