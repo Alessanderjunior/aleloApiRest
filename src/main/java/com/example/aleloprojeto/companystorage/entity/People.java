@@ -1,22 +1,26 @@
 package com.example.aleloprojeto.companystorage.entity;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-
 
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class people {
+public class People {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(nullable = false, unique = true)
     private String name;
@@ -28,11 +32,9 @@ public class people {
     private String cpf;
 
     @Column(nullable = true)
-    private  Adress adress;
+    private Adress adress;
 
     @Column(nullable = false)
     private String phoneNumb;
 
 }
-
-
